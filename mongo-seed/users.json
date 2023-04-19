@@ -1,0 +1,13 @@
+[
+    {
+        "_id": {
+            "$oid": "643fbc8ae39babacaadac1c1"
+        },
+        "username": "TestUser",
+        "email": "test@g.com",
+        "password": "$2b$10$sTnNcvIBuXIg8yRUgODIjed9u85IYZ41qW0ptCrMiSxJ9llF2Bs5C",
+        "roles": [
+            "MERCHANT"
+        ]
+    }
+]

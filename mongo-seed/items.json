@@ -1,0 +1,56 @@
+[
+    {
+        "_id": {
+            "$oid": "64345e007e1e0c3b54971b12"
+        },
+        "title": "Spaghetti Bolonez",
+        "description": "Wonderful spaghetti with bolonez sauce",
+        "category": "64345e007e1e0c3b54971b18",
+        "cost": 7
+    },
+    {
+        "_id": {
+            "$oid": "64345e007e1e0c3b54971b13"
+        },
+        "title": "Spaghetti Pesto",
+        "description": "Wonderful spaghetti with pesto",
+        "category": "64345e007e1e0c3b54971b18",
+        "cost": 7
+    },
+    {
+        "_id": {
+            "$oid": "64345e007e1e0c3b54971b14"
+        },
+        "title": "Mojito",
+        "description": "Rum, lime juice, spearmint, brown sugar",
+        "category": "64345e007e1e0c3b54971b11",
+        "cost": 7
+    },
+    {
+        "_id": {
+            "$oid": "64345e007e1e0c3b54971b15"
+        },
+        "title": "Old fashion",
+        "description": "Bushmills Irish Whiskey, orange, sugar",
+        "category": "64345e007e1e0c3b54971b11",
+        "cost": 7
+    },
+    {
+        "_id": {
+            "$oid": "64345e007e1e0c3b54971b16"
+        },
+        "title": "Kolokithokeftedes",
+        "description": "With garlic sauce",
+        "category": "64345e007e1e0c3b54971b19",
+        "cost": 4
+    },
+    {
+        "_id": {
+            "$oid": "64345e007e1e0c3b54971b17"
+        },
+        "title": "Tirokauteri",
+        "description": "Very spicy, with feta cheese, greek yogurt, red peppers",
+        "category": "64345e007e1e0c3b54971b19",
+        "cost": 4
+    }
+]

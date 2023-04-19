@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delivery - View items</title>
+
+    <link href="./assets/css/common/bootstrap-5.3.0.min.css" rel="stylesheet">
+    <link href="./assets/css/pages/items-view.css" rel="stylesheet">
+</head>
+
+<body></body>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Delivery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">View Items</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main-container container-fluid">
+    <span>Currency: </span>
+    <select class="form-select" aria-label="Default select example" id="currency-select" onchange="loadItems()">
+        <option value="EUR" selected>EUR</option>
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+    </select>
+    <img src="assets/img/loading.gif" class="loadingImg" />
+    <div class="items-container">
+    </div>
+    <div class="order-container">
+        <div class="form-group">
+            <label for="emailAddressInput">Email address</label>
+            <input type="email" class="form-control" id="emailAddressInput" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">You will receive order updates in this emails.</small>
+        </div>
+        <button class="btn btn-primary submit-order-button" onclick="submitOrder()">Submit Order</button>
+        <div class="error-container-order"></div>
+    </div>
+    <div class="error-container">Could not retrieve items</div>
+
+</div>
+
+<script src="./assets/js/common/lib/axios.min.js"></script>
+<script src="./assets/js/common/lib/jquery-3.2.1.slim.min.js"></script>
+<script src="./assets/js/common/lib/bootstrap-5.3.0.bundle.min.js"></script>
+<script src="./assets/js/common/api/http-requests.js"></script>
+<script src="./assets/js/common/api/item.js"></script>
+<script src="./assets/js/common/api/order.js"></script>
+<script src="./assets/js/pages/cart.js"></script>
+<script src="./assets/js/pages/view-items.js"></script>
+
+
+
+</body>
+
+</html>

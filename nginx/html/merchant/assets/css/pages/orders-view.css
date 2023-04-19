@@ -1,0 +1,26 @@
+.loadingImg {
+    display: none;
+}
+
+.main-container .orders-container {
+    margin-top: 2%;
+}
+
+.main-container .order-container {
+    display: none;
+    margin: 3%;
+}
+
+
+.main-container .orders-container .card {
+    margin: 5px;
+}
+
+
+.error-container {
+    display: none;
+}
+
+.order-container {
+    width: 50%;
+}

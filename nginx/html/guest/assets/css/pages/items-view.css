@@ -1,0 +1,59 @@
+.loadingImg {
+    display: none;
+}
+
+.main-container .items-container {
+    margin-top: 2%;
+    display: flex;
+}
+
+.main-container .order-container {
+    display: none;
+    margin: 3%;
+}
+
+
+.main-container .items-container .card .button-wrapper {
+    /* justify-content: flex-end;
+    display: flex; */
+    float: left;
+    width: 100%;
+}
+
+.main-container .items-container .card .button-wrapper {
+    /* justify-content: flex-end;
+    display: flex; */
+    float: left;
+    width: 100%;
+}
+
+.main-container .items-container .card .button-wrapper .add-btn {
+    float: left;
+}
+
+.main-container .items-container .card .button-wrapper .remove-btn {
+    float: right;
+    display: none;
+}
+
+
+.main-container .items-container .card {
+    margin: 5px;
+}
+
+.main-container .items-container .card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .items-container .card .card-body .card-text {
+    flex-grow: 1;
+}
+
+.error-container {
+    display: none;
+}
+
+.order-container {
+    width: 50%;
+}

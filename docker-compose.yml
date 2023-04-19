@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./api
+      # target: base
+      args:
+        NODE_ENV: production
+    command: yarn start
+    env_file:
+      - ./api/.env
+    # ports:
+    #   - 8080:8080
+    depends_on:
+      - mongodb
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/html/:/usr/share/nginx/html/
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    depends_on:
+      - api
+
+  mongodb:
+    image: mongo:4.4.6
+    container_name: mongodb2
+    restart: unless-stopped
+    # ports:
+    #   - 27017:27017
+    volumes:
+      - dbdata:/data/db
+
+  redis-cache:
+    image: redis:6.2-alpine
+    container_name: redis-cache
+    restart: unless-stopped
+    # ports:
+    #   - '6379:6379'
+    volumes:
+      - cache:/data
+
+  mongo-seed:
+    build: ./mongo-seed
+    depends_on:
+      - mongodb
+
+volumes:
+  dbdata:
+  cache:
+
+
